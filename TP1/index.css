@@ -1,21 +1,94 @@
-.etiqueta2 {
-    border: 4px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+header {
+    text-align: center;
+    background-image: url('https://c.wallhere.com/photos/28/13/anime_trees_sky_artwork-172777.jpg!d');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 50vh;
+    padding: 100px;
 }
 
-h1 {
-    color: orangered;  
+.cajadenavegador1 {
     
+    font-family: 'Righteous', 'cursive';
+    font-size: 1.5em;
+    width: 82vw;
+    height: 10vh;
+    border: 2px solid white;
+    margin-left: 50px;
+    background-color: black;
+    background-position: center;
+    box-sizing: border-box;   
+         
 }
-.etiqueta1 {
-    color: black;
+
+body {
+    margin: 0;
+    padding 0
+}  
+
+h1 {
+    color: orangered;     
 }
+
 h2 {
     color: firebrick;
+    font-family: 'Righteous', 'cursive';
 }
 
 .email {
     border: 2px solid red;
 }
-.etiqueta3 {
-    color: rgb(15, 181, 236);
+
+h3 {
+    font-family: 'Righteous', 'cursive';
+    color: black
 }
+
+.boton1 {
+    text-align: center;
+    margin: 4px;
+    border: 2px solid black;
+    color: #68CCA6;
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 1.4em;
+    display: inline-flex
+    
+    
+}
+
+.imagenp {
+    width: 90vw;
+    height: 50vh;
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    border: 5px solid white;
+    filter: grayscale(40%);   
+}
+
+footer {
+    height: 20vh;
+    background-color: black;
+    font-family: 'Righteous', 'cursive';
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.footer-nav a {
+    color:#68CCA6;
+    text-decoration: none;
+    
+}
+
+
+
+   
+   
+    
+  
+   
