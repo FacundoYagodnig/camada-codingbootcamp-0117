@@ -62,13 +62,14 @@ h3 {
 }
 
 .imagenp {
-    width: 90vw;
+    width: 100%;
     height: 50vh;
     text-align: center;
     display: inline-block;
     margin: 40px;
     border: 5px solid white;
-    filter: grayscale(40%);   
+    filter: grayscale(40%);
+    
 }
 
 footer {
@@ -80,8 +81,10 @@ footer {
 }
 
 .footer-nav a {
+    margin: 5px;
     color:#68CCA6;
     text-decoration: none;
+    
     
 }
 
