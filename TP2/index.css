@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+.divbox{
+    width: 68%;
+    height: 100%;
+    float: left;
+
+}
+
+
+.imgfondo {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+
+   
+}
+
+.form {
+    margin: 0px;
+    padding: 0px;
+    width: 32%;
+    height: 100%;
+    background-color: rgb(1, 192, 255);
+    float: right;
+   justify-content: center;
+    display: inline-flex;
+ 
+   
+}
+
+.formcontainer {
+    width: 20vw;
+    height: 80vh;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+  
+
+}
+.login-icon {
+    width: 20px;
+    height: 50px;
+    background-size: 100%;
+    position: relative;
+    top: 0px;
+    left: 120px;
+    margin-top: 20px;
+}
+
+
+.list {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 50px;
+    padding-top: 40px;
+    
+}
+
+
+
+.list li {
+    font-size: 1.6em;
+    color: black;
+    font-family: 'Righteous', cursive;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.inicio {
+    margin-top: 70px;
+}
+
+.forgot {
+    padding-top: 70px;
+}
+
+.list li input {
+    width: 20em;
+    height: 5em;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 15px;
+    
+    margin-bottom: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.list li input[type="button"] {
+    background-color: white;
+
+}
+
