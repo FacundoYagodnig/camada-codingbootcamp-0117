@@ -13,7 +13,7 @@ header {
   width: 100vw;
   height: 10vh;
   display: flex;
-  justify-content: space-around;
+  
   background-color: #de9ae8;
   border: 2px solid #bd34d1;
   box-sizing: border-box;
@@ -24,17 +24,18 @@ header {
 }
 
 .menu-nav {
-  width: 70vw;
+  width: 40%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
  
 }
 
 
 .nav-buttons {
-  width: 14vw;
+  
   height: 3vh;
-  margin: 10px;
+  
   font-size: 2em;
   font-family: "Balsamiq Sans", cursive;
   
@@ -51,7 +52,7 @@ a {
   display: inline-block;
   width: 20vw;
   height: 100%;
-  position: absolute;
+  
   left: 0;
 }
 
