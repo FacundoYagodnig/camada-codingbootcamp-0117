@@ -61,15 +61,116 @@ h3 {
     
 }
 
+.god-section {
+    background: rgb(43,39,46);
+background: linear-gradient(90deg, rgba(43,39,46,1) 0%, rgba(68,50,78,1) 57%, rgba(83,54,88,1) 100%);
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+
+.frase-card {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height:20%;
+    width: 65%;
+    
+}
+
+.imagenp {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap; 
+    background: rgb(195,110,255);
+background: linear-gradient(90deg, rgba(195,110,255,1) 0%, rgba(206,141,240,1) 57%, rgba(212,0,249,1) 100%);
+box-sizing: border-box;
+border: black 4px solid;
+    
+   
+    
+}
+
+.card1 {
+    width: 25vw;
+    height: 27vh;
+  
+   margin-top: 20px;
+}
+
+.card2 {
+    width: 25vw;
+    height: 27vh;
+   margin-top: 20px;
+   box-sizing: border-box;
+   
+}
+
+.card3 {
+    width: 25vw;
+   height: 27vh;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 500px) {
+.god-section {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap
+}
+
 .imagenp {
     width: 100%;
-    height: 50vh;
-    text-align: center;
-    display: inline-block;
-    margin: 40px;
-    border: 5px solid white;
-    filter: grayscale(40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: black 4px solid;
+}
+
+.frase-card {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        height:20%;
+        width: 65%;
+        
+    }
+
+    .card1 {
+        width: 90%;
+        height: 60%;
+      
+       margin-top: 20px;
+    }
     
+    .card2 {
+        width: 90%;
+        height: 60%;
+       margin-top: 20px;
+       box-sizing: border-box;
+       
+    }
+    
+    .card3 {
+        width: 90%;
+        height: 60%;
+        margin-top: 20px;
+}
+
+
+
+
+
+
 }
 
 footer {
