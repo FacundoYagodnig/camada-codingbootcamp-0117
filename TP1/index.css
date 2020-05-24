@@ -1,350 +1,427 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 header {
-    text-align: center;
-    background-image: url('https://c.wallhere.com/photos/28/13/anime_trees_sky_artwork-172777.jpg!d');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 50vh;
-    padding: 100px;
+  text-align: center;
+  background-image: url("https://c.wallhere.com/photos/28/13/anime_trees_sky_artwork-172777.jpg!d");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 50vh;
+  padding: 100px;
 }
 
 .cajadenavegador1 {
-    
-    font-family: 'Righteous', 'cursive';
-    font-size: 1.5em;
-    width: 82vw;
-    height: 10vh;
-    border: 2px solid white;
-    margin-left: 50px;
-    background-color: black;
-    background-position: center;
-    box-sizing: border-box;   
-         
+  font-family: "Righteous", "cursive";
+  font-size: 1.5em;
+  width: 82vw;
+  height: 10vh;
+  border: 2px solid white;
+  margin-left: 50px;
+  background-color: black;
+  background-position: center;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding 0
-}  
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
-    color: orangered;     
+  color: orangered;
 }
 
 h2 {
-    color: firebrick;
-    font-family: 'Righteous', 'cursive';
+  color: firebrick;
+  font-family: "Righteous", "cursive";
 }
 
 .email {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 h3 {
-    font-family: 'Righteous', 'cursive';
-    color: black
+  font-family: "Righteous", "cursive";
+  color: black;
 }
 
 .boton1 {
-    text-align: center;
-    margin: 4px;
-    border: 2px solid black;
-    color: #68CCA6;
-    text-decoration: none;
-    background-color: black;
-    font-family: 'Righteous', cursive;
-    font-size: 1.4em;
-    display: inline-flex
-    
-    
+  text-align: center;
+  margin: 4px;
+  border: 2px solid black;
+  color: #68cca6;
+  text-decoration: none;
+  background-color: black;
+  font-family: "Righteous", cursive;
+  font-size: 1.4em;
+  display: inline-flex;
 }
 
-.god-section {
-    background: rgb(43,39,46);
-background: linear-gradient(90deg, rgba(43,39,46,1) 0%, rgba(68,50,78,1) 57%, rgba(83,54,88,1) 100%);
-    align-items: center;
-    display: flex;
-    
-    justify-content: space-around;
-    height: 60vh;
-}
+/* .god-section {
+  background: rgb(43, 39, 46);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 39, 46, 1) 0%,
+    rgba(68, 50, 78, 1) 57%,
+    rgba(83, 54, 88, 1) 100%
+  );
+  align-items: center;
+  display: flex;
 
+  justify-content: space-around;
+  height: 60vh;
+}
 
 .frase-card {
-    margin: 0 10px;
-    display: flex;
-   
-    justify-content: center;
-    align-items: center;
-    height: 12%;
-    width: 99%;
-    border-radius: 15px;
-    background: rgb(70,11,80);
-    background: linear-gradient(90deg, rgba(70,11,80,1) 32%, rgba(53,11,56,1) 73%, rgba(81,18,92,1) 100%);
+  display: flex;
+  position: absolute;
+  bottom: -300;
+  top: 996;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  width: 32.5%;
+
+  border-radius: 6px;
+  background: rgb(70, 11, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 11, 80, 1) 32%,
+    rgba(53, 11, 56, 1) 73%,
+    rgba(81, 18, 92, 1) 100%
+  );
 }
 
 .imagenp {
-    width: 30%;
-    height: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-    background: rgb(48,42,51);
-background: linear-gradient(90deg, rgba(48,42,51,1) 0%, rgba(80,58,88,1) 66%, rgba(28,26,28,1) 100%);
-border-radius: 10px      
+  width: 30%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(48, 42, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 42, 51, 1) 0%,
+    rgba(80, 58, 88, 1) 66%,
+    rgba(28, 26, 28, 1) 100%
+  );
+  border-radius: 10px;
 }
 
 .card1 {
-    width: 25vw;
-    height: 27vh;
-  
-   margin-top: 20px;
+  width: 25vw;
+  height: 27vh;
+
+  margin-top: 20px;
 }
 
 .card2 {
-    width: 25vw;
-    height: 27vh;
-   margin-top: 20px;
-  
+  width: 25vw;
+  height: 27vh;
+  margin-top: 20px;
 }
 
 .card3 {
-    width: 25vw;
-   height: 27vh;
-    margin-top: 20px;
-}
+  width: 25vw;
+  height: 27vh;
+  margin-top: 20px;
+} */
 
-@media (min-width: 701px) {
+/* .imagenp > .fondo-imagenp {
+  background: rgb(149, 90, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(149, 90, 179, 1) 0%,
+    rgba(121, 46, 150, 1) 66%,
+    rgba(71, 36, 74, 1) 100%
+  );
+  padding-bottom: 2vh;
+  height: 70%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+} */
+
+ @media (min-width: 701px) {
     .god-section {
-        width: 100%;
-        height:80%;
+        background: rgb(43, 39, 46);
+        background: linear-gradient(
+          90deg,
+          rgba(43, 39, 46, 1) 0%,
+          rgba(68, 50, 78, 1) 57%,
+          rgba(83, 54, 88, 1) 100%
+        );
+        align-items: center;
         display: flex;
-       justify-content: space-around;
-        flex-direction: column;
-    }
+        justify-content: space-around;
+        height: 60vh;
+      }
     
-    .imagenp {
-        width: 80%;
-        height: 30%;
+      .frase-card {
+        display: flex;
+        position: absolute;
+        bottom: -300;
+        top: 1023;
+        justify-content: center;
+        align-items: center;
+        height: 5%;
+        width: 30%;
+    border-top: 1.5px solid black;
+        border-radius: 2px;
+        background: rgb(70, 11, 80);
+        background: linear-gradient(
+          90deg,
+          rgba(70, 11, 80, 1) 32%,
+          rgba(53, 11, 56, 1) 73%,
+          rgba(81, 18, 92, 1) 100%
+        );
+      }
+    
+      .imagenp {
+        width: 30%;
+        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: black 4px solid;
         
-    }
+        border: 2px solid black;
+        background: rgb(48, 42, 51);
+        background: linear-gradient(
+          90deg,
+          rgba(48, 42, 51, 1) 0%,
+          rgba(80, 58, 88, 1) 66%,
+          rgba(28, 26, 28, 1) 100%
+        );
+        
+      }
     
+      .card1 {
+        width: 90%;
+        height: 90%;
+        
+      }
     
-   
-        .card1 {
-            width: 80%;
-            height:60%;
-          
-           margin-top: 20px;
-        }
-        
-        .card2 {
-            width: 80%;
-            height:60%;
-           margin-top: 20px;
-           
-        }
-        
-        .card3 {
-            width: 80%;
-            height: 60%;
-            margin-top: 20px;
-        }
-    .imagenp > div {
-        flex-direction: column;
-    }
-    
-    }
-
-    @media (min-width:900px) {
-        .god-section {
-           
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            height: 60vh;
-        }
-        
-        
+      .card2 {
+        width: 90%;
+        height: 90%;
        
+      }
+    
+      .card3 {
+        width: 90%;
+        height: 90%;
         
-        .imagenp {
-            width: 30%;
-            height: 70%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap; 
-            
+      } 
+    
+      .imagenp > .fondo-imagenp {
+        background: rgb(149, 90, 179);
+        background: linear-gradient(
+          90deg,
+          rgba(149, 90, 179, 1) 0%,
+          rgba(121, 46, 150, 1) 66%,
+          rgba(71, 36, 74, 1) 100%
+        );
+        padding-bottom: 2vh;
+        height: 83%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1.5px solid black;
         
-        border: black 4px solid;
-            
-           
-            
-        }
-        
-        .card1 {
-            width: 25vw;
-            height: 27vh;
-          
-           margin-top: 20px;
-        }
-        
-        .card2 {
-            width: 25vw;
-            height: 27vh;
-           margin-top: 20px;
-           box-sizing: border-box;
-           
-        }
-        
-        .card3 {
-            width: 25vw;
-           height: 27vh;
-            margin-top: 20px;
-        }
-        }
-
-@media (min-width:1200px) {
-        .god-section {
-            background: rgb(43,39,46);
-        background: linear-gradient(90deg, rgba(43,39,46,1) 0%, rgba(68,50,78,1) 57%, rgba(83,54,88,1) 100%);
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            height: 60vh;
-        }
-        
-        .imagenp {
-            width: 30%;
-            height: 70%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap; 
-            
-        box-sizing: border-box;
-        border: black 4px solid;
-        
-            
-        }
-        
-        .card1 {
-            width: 25vw;
-            height: 27vh;
-          
-           margin-top: 20px;
-        }
-        
-        .card2 {
-            width: 25vw;
-            height: 27vh;
-           margin-top: 20px;
-           box-sizing: border-box;
-           
-        }
-        
-        .card3 {
-            width: 25vw;
-           height: 27vh;
-            margin-top: 20px;
-        }
-        }
-
-@media (max-width: 700px) {
-.god-section {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-wrap: wrap
+      } 
 }
 
-.imagenp {
-    width: 80%;
-    height: 30%;
+/* @media (min-width: 1200px) {
+  .god-section {
+    background: rgb(43, 39, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 39, 46, 1) 0%,
+      rgba(68, 50, 78, 1) 57%,
+      rgba(83, 54, 88, 1) 100%
+    );
+    align-items: center;
+    display: flex;
+
+    justify-content: space-around;
+    height: 60vh;
+  }
+
+  .frase-card {
+    display: flex;
+    position: absolute;
+    bottom: -300;
+    top: 1023;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 30%;
+border-top: 1.5px solid black;
+    border-radius: 2px;
+    background: rgb(70, 11, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(70, 11, 80, 1) 32%,
+      rgba(53, 11, 56, 1) 73%,
+      rgba(81, 18, 92, 1) 100%
+    );
+  }
+
+  .imagenp {
+    width: 30%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: black 4px solid;
+    background: rgb(48, 42, 51);
+    background: linear-gradient(
+      90deg,
+      rgba(48, 42, 51, 1) 0%,
+      rgba(80, 58, 88, 1) 66%,
+      rgba(28, 26, 28, 1) 100%
+    );
+    
+  }
+
+  .card1 {
+    width: 90%;
+    height: 90%;
+    
+    
+  }
+
+  .card2 {
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .card3 {
+    width: 90%;
+    height: 90%;
    
-}
+  }
 
-.frase-card {
-    background: rgb(70,11,80);
-background: linear-gradient(90deg, rgba(70,11,80,1) 32%, rgba(53,11,56,1) 73%, rgba(81,18,92,1) 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:10%;
-        width: 65%;
-        
-    }
-
-    .card1 {
-        width: 80%;
-        height:60%;
-      
-       margin-top: 20px;
-    }
+  .imagenp > .fondo-imagenp {
+    background: rgb(149, 90, 179);
+    background: linear-gradient(
+      90deg,
+      rgba(149, 90, 179, 1) 0%,
+      rgba(121, 46, 150, 1) 66%,
+      rgba(71, 36, 74, 1) 100%
+    );
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
     
-    .card2 {
-        width: 80%;
-        height:60%;
-       margin-top: 20px;
-       
-    }
-    
-    .card3 {
-        width: 80%;
-        height: 60%;
-        margin-top: 20px;
-}
-}
+  }
+} */
 
-.imagenp > .fondo-imagenp {
-    background: rgb(149,90,179);
-background: linear-gradient(90deg, rgba(149,90,179,1) 0%, rgba(121,46,150,1) 66%, rgba(71,36,74,1) 100%);
-    padding-bottom: 2vh;
+
+
+@media (max-width: 700px) {
+  .god-section {
+    width: 100%;
     height: 80%;
-    width: 95%;
-   display: flex;
-   justify-content: center;
-   align-items: center;   
-   border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(43, 39, 46);
+        background: linear-gradient(
+          90deg,
+          rgba(43, 39, 46, 1) 0%,
+          rgba(68, 50, 78, 1) 57%,
+          rgba(83, 54, 88, 1) 100%
+        );
+  }
+
+  .imagenp {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: black 2px solid;
+  }
+
+  .frase-card {
+    background: rgb(70, 11, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(70, 11, 80, 1) 32%,
+      rgba(53, 11, 56, 1) 73%,
+      rgba(81, 18, 92, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15.4%;
+    width: 100%;
+    border-top: 1.5px solid black;
+ 
+  }
+
+  .imagenp > .fondo-imagenp {
+    background: rgb(149, 90, 179);
+    background: linear-gradient(
+      90deg,
+      rgba(149, 90, 179, 1) 0%,
+      rgba(121, 46, 150, 1) 66%,
+      rgba(71, 36, 74, 1) 100%
+    );
+    
+    height: 83%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+  } 
+
+
+  .card1 {
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .card2 {
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .card3 {
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
 }
-
-
 
 footer {
-    height: 20vh;
-    background-color: black;
-    font-family: 'Righteous', 'cursive';
-    font-size: 1.5em;
-    text-align: center;
+  height: 20vh;
+  background-color: black;
+  font-family: "Righteous", "cursive";
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .footer-nav a {
-    margin: 5px;
-    color:#68CCA6;
-    text-decoration: none;
-    
-    
+  margin: 5px;
+  color: #68cca6;
+  text-decoration: none;
 }
-
-
-
-   
-   
-    
-  
-   
