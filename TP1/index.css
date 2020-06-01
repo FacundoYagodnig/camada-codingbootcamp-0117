@@ -163,8 +163,8 @@ h3 {
       .frase-card {
         display: flex;
         position: absolute;
-        bottom: -300;
-        top: 1023;
+        bottom: -700;
+        top: 1210;
         justify-content: center;
         align-items: center;
         height: 5%;
