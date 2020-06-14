@@ -3,6 +3,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  background-color: #02002e;
 }
 
 header {
@@ -52,50 +53,106 @@ nav img {
 .section2 {
   width: 100%;
   height: 50%;
-  background-color: black;
   box-sizing: border-box;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.card {
-  width: 33%;
-  height: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  border: 2px solid black;
-  background: rgb(112, 41, 115);
+.section2 .card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: black;
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+}
+
+.section2 .card:nth-child(1)::before {
+  background: rgb(223, 244, 8);
   background: linear-gradient(
     164deg,
-    rgba(112, 41, 115, 1) 19%,
-    rgba(250, 251, 245, 1) 100%
+    rgba(204, 255, 0, 1) 44%,
+    rgba(39, 255, 0, 1) 73%
   );
-
-  flex-wrap: wrap;
 }
+.section2 .card:nth-child(2)::before {
+  background: rgb(250, 0, 0);
+  background: linear-gradient(
+    315deg,
+    rgba(250, 0, 0, 1) 32%,
+    rgba(244, 138, 8, 1) 57%,
+    rgba(0, 255, 244, 1) 100%
+  );
+}
+.section2 .card:nth-child(3)::before {
+  background: rgb(34, 143, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 143, 250, 1) 32%,
+    rgba(244, 138, 8, 1) 57%,
+    rgba(255, 252, 0, 1) 100%
+  );
+}
+
+.card {
+  width: 22%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid #000;
+  background: rgb(2, 0, 46);
+  background: linear-gradient(
+    164deg,
+    rgba(2, 0, 46, 1) 44%,
+    rgba(7, 2, 103, 1) 73%
+  );
+}
+
 div img {
-  width: 33%;
-  height: auto;
-  margin: 10px;
-  padding: 10px;
+  width: 45%;
+  top: 100px;
+  right: 107px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
   background-color: white;
-  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+div:hover img {
+  top: -140px;
 }
 
 .frase-card {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  height: 30%;
+  height: 20%;
+  margin-bottom: 43%;
   justify-content: center;
   align-items: center;
   font-family: "Righteous", cursive;
-  font-size: 1.5em;
-  background: #854070;
-  border-top: 2px solid black;
-  color: white;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  position: relative;
+  transition: 0.5s;
+  margin-left: 5%;
+  opacity: 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.card:hover .frase-card h2 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .section3 {
@@ -173,7 +230,7 @@ div img {
   width: 100%;
   height: 20%;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background: rgb(48, 42, 51);
   background: linear-gradient(
     90deg,
