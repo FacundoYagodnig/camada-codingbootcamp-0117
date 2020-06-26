@@ -1,79 +1,123 @@
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
   padding: 0px;
 }
 
 header {
-  display: block;
+  padding: 100px 0px;
+  min-height: 80%;
+  width: 100%;
+  background-image: url(https://www.rebirth-festival.nl/app/uploads/2019/06/20190413_Rebirth__MNO-Photo_0102_-1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.container-menu {
-  width: 100vw;
-  height: 10vh;
+.menu-container {
   display: flex;
-  
-  background-color: #de9ae8;
-  border: 2px solid #bd34d1;
-  box-sizing: border-box;
-  margin-top: 10px;
-  position: absolute;
-  top: 0;
-  
+  justify-content: center;
+  align-content: center;
+  height: 8vh;
+  width: 100%;
 }
 
 .menu-nav {
-  width: 40%;
+  width: 60%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
- 
-}
-
-
-.nav-buttons {
-  
-  height: 3vh;
-  
-  font-size: 2em;
-  font-family: "Balsamiq Sans", cursive;
-  
-  
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.container-logo
-{
-  display: inline-block;
-  width: 20vw;
-  height: 100%;
-
-  left: 0;
-}
-
-.logo-cof {
-  width: 12vw;
-  height: 100%;
-  background-color: black;
-  z-index: 100;
-  left: 0;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-right: 2px solid #bd34d1;
+  background-color: white;
+  border-radius: 60px;
+}
+
+.navegador {
+  width: 80%;
+  height: 100%;
+}
+
+.navegador ul {
+  float: right;
+  padding-inline-start: 0px;
+  font-family: "Odibee Sans", cursive;
+  font-size: 1.8em;
+  margin-right: 20px;
+  margin-top: 24px;
+  margin-block-end: 0;
+}
+
+.navegador ul li {
   display: inline-block;
+  margin: 0 30px;
 }
 
-.logo-name {
-  font-family: "Balsamiq Sans", cursive;
-  font-size: 2em;
-  color: white;
-  margin-top: 12%;
-  padding-right: 5%;
+.logo {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  background-color: white;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
 }
 
+H2 {
+  font-size: 1.9em;
+  font-family: "Odibee Sans", cursive;
+}
 
+.botondecompra {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150;
+}
+
+input {
+  background-color: white;
+  height: 50%;
+  width: 10%;
+  border-radius: 20px;
+}
+
+main {
+  height: 80%;
+}
+.section1 {
+  height: 60%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frase {
+  height: 80%;
+  width: 40%;
+  background-color: white;
+  margin: 1.5% 1.5%;
+}
+
+.container {
+  height: 80%;
+  width: 60%;
+  margin: 1.5% 1.5%;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.gif {
+  height: 100%;
+  width: 100%;
 }
