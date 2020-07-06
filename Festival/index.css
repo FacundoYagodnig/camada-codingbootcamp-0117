@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Monoton&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Modak&family=Monoton&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Keania+One&family=Modak&family=Monoton&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Keania+One&family=Modak&family=Monoton&family=VT323&family=Zilla+Slab+Highlight:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Faster+One&family=Keania+One&family=Modak&family=Monoton&family=VT323&family=Zilla+Slab+Highlight:wght@700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -7,67 +14,172 @@
 body {
   background-color: black;
 }
-
 header {
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   padding: 100px 0px;
-  min-height: 90%;
+  height: 100%;
+  width: 90%;
+  top: 0;
+}
+
+header::before {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.15)),
+    to(black)
+  );
+  content: "";
+  position: absolute;
+  height: 100%;
   width: 100%;
+}
+
+.imagen-header {
+  width: 100%;
+  height: 100%;
   background-image: url(https://blogsimages.adobe.com/creative/files/2020/01/Jasmin-Curth-Fotolia_277964209_V_HD720.v2.gif);
   background-repeat: no-repeat;
+  background-color: gray;
   background-position: center center;
   background-size: cover;
+  z-index: -1;
   box-shadow: 1px 0px 20px 20px black inset;
+  position: absolute;
 }
 
-.menu-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 8vh;
+.names {
   width: 100%;
-}
-
-.menu-nav {
-  width: 60%;
-  height: 100%;
+  margin-left: 2%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Faster One", cursive;
+  flex-wrap: wrap;
+}
+
+.names span:nth-child(1) {
+  color: black;
+  width: 60%;
+  height: 10%;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: ;
   text-align: center;
-  background-color: white;
-  border-radius: 60px;
+  position: relative;
+  top: 50;
+  left: 50;
+  animation: cartel-neon 2s infinite alternate;
+}
+.names span:nth-child(2) {
+  color: black;
+  width: 60%;
+  height: 10%;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: ;
+  text-align: center;
+  position: relative;
+  top: 50;
+  left: 30;
+  animation: cartel-neon 2s infinite alternate;
+}
+
+@keyframes cartel-neon {
+  0%,
+  10%,
+  15%,
+  20%,
+  30%,
+  35%,
+  40%,
+  50%,
+  55%,
+  60%,
+  70%,
+  80%,
+  85%,
+  95%,
+  100% {
+    text-shadow: 0px 0px 10px #ff00db, -4px 10px 10px #ff00db,
+      -4px 10px 10px #ff00db;
+  }
+
+  10%,
+  15%,
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  background-color: black;
+  z-index: 200;
+}
+
+.menu-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 99;
 }
 
 .navegador {
   width: 80%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  z-index: 99;
 }
 
 .navegador ul {
-  float: right;
+  width: 100%;
   padding-inline-start: 0px;
   font-family: "Odibee Sans", cursive;
-  font-size: 1.8em;
-  margin-right: 20px;
-  margin-top: 24px;
+  font-size: 2em;
+  margin-left: 20%;
   margin-block-end: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
 }
 
 .navegador ul li {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
   margin: 0 30px;
+  text-shadow: 1px 0px 10px#00ff11;
+  color: white;
+  z-index: 99;
 }
 
 .logo {
   height: 100%;
   width: 25%;
   font-family: "Odibee Sans", cursive;
-  font-size: 1.2em;
-  display: inline-block;
-  background-color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom-left-radius: 60px;
   border-top-left-radius: 60px;
+  text-shadow: 1px 0px 10px#00ff11;
+  color: white;
+}
+
+.logo h2 {
+  font-weight: 900;
 }
 
 .botondecompra {
@@ -75,9 +187,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
-  top: 150;
+  top: 200;
 }
 
 input {
@@ -85,111 +197,6 @@ input {
   height: 50%;
   width: 10%;
   border-radius: 20px;
-}
-
-.section1 {
-  height: 100%;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  height: 100%;
-  width: 80%;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3, 50fr);
-  row-gap: 2em;
-  box-sizing: border-box;
-  box-shadow: 1px 0px 20px 10px #00ff11;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border: 2px solid black;
-
-  display: grid;
-  grid-template-columns: 60% 10% 40%;
-  grid-template-rows: 100%;
-}
-
-.card2 {
-  width: 100%;
-  height: 100%;
-
-  border: 2px solid black;
-  display: grid;
-  justify-content: start;
-  align-items: flex-start;
-  grid-template-columns: 40% 20% 60%;
-  grid-template-rows: 100%;
-}
-
-.card2 .frase {
-  width: 100%;
-  height: 100%;
-  grid-column: 1;
-  grid-row: 1;
-  background-color: white;
-}
-
-.card2 .imagen {
-  width: 75%;
-  height: 100%;
-  grid-column: 2/4;
-  z-index: 5;
-  -webkit-box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.card2 .imagen img {
-  width: 100%;
-  height: 100%;
-}
-
-.card3 {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border: 2px solid black;
-  display: grid;
-  grid-template-columns: 60% 20% 40%;
-  grid-template-rows: 100%;
-}
-
-.imagen {
-  width: 100%;
-  height: 100%;
-
-  z-index: 5;
-  -webkit-box-shadow: 4px -1px 6px 3px rgba(0, 0, 0, 0.72);
-  -moz-box-shadow: 4px -1px 6px 3px rgba(0, 0, 0, 0.72);
-  box-shadow: 4px -1px 6px 3px rgba(0, 0, 0, 0.72);
-}
-
-.imagen > img {
-  width: 100%;
-  height: 100%;
-}
-
-.frase {
-  width: 35%;
-  height: 100%;
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.frase > p {
-  font-family: "Odibee Sans", cursive;
-  font-size: 1.8em;
 }
 
 .section2 {
@@ -206,32 +213,58 @@ input {
 }
 
 .card-flex {
-  width: 25%;
+  width: 20%;
   height: 70%;
-  background-color: white;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  animation: turquesa-neon 2s infinite alternate;
+}
+
+@keyframes turquesa-neon {
+  0%,
+  10%,
+  15%,
+  20%,
+  30%,
+  35%,
+  40%,
+  50%,
+  55%,
+  60%,
+  70%,
+  80%,
+  85%,
+  95%,
+  100% {
+    -webkit-box-shadow: 0px -1px 20px 10px #1fffff;
+    -moz-box-shadow: 0px -1px 20px 10px #1fffff;
+    box-shadow: 0px -1px 20px 10px #1fffff;
+  }
+
+  10%,
+  15%,
+  40%,
+  60% {
+    box-shadow: none;
+  }
 }
 
 .imagen-card {
-  width: 90%;
+  width: 100%;
   height: 60%;
 }
 
 .imagen-card img {
   width: 100%;
   height: 100%;
+  border: solid 0.1em #1fffff;
+  border-bottom: hidden;
+  box-shadow: 0px -1px 2px 2px #1fffff inset;
 }
 
 .frase-card {
-  width: 90%;
+  width: 100%;
   height: 40%;
-  box-shadow: 1px 0px 20px 7px blueviolet;
+  border: solid 0.01em #1fffff;
   background-color: black;
-
   font-family: "Odibee Sans", cursive;
   font-size: 3em;
   text-align: center;
@@ -241,6 +274,134 @@ input {
 }
 
 .frase-card > h3 {
- text-shadow: 1px 0px 10px#00ff11;
+  text-shadow: 1px 0px 10px#00ff11;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .logos {
+  width: 30%;
+  height: 60%;
+  background-color: black;
+}
+
+.logos > img {
+  width: 20vw;
+  height: 15vh;
+}
+
+
+
+.section1 {
+  height: 100%;
+  width: 150%;
+  margin-bottom: 5em;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 40%);
+  box-shadow: 0px -1px 2px 2px #1fffff inset;
+}
+
+
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 10% 40%;
+  
+  
+}
+
+.card2 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 40% 10% 60%;
+}
+
+.card2 .frase {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1;
+  color: white;
+}
+
+.card2 .imagen {
+  width: 80%;
+  height: 60%;
+  grid-column: 2/5;
+  z-index: 5;
+
+  box-sizing: content-box;
+}
+
+.card2 .imagen img {
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 5%;
+  position: relative;
+  box-shadow: -20px 10px 50px 0px black;
+  z-index: 4;
+  left: -0;
+  border-top-left-radius: 6%;
+}
+
+.card3 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 60% 10% 40%;
+}
+
+.imagen {
+  width: 100%;
+  height: 60%;
+  z-index: 5;
+}
+
+.imagen > img {
+  width: 100%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 0;
+  box-shadow: 20px -10px 50px 0px black;
+}
+
+.frase {
+  width: 80%;
+  height: 100%;
+  grid-column: 2/5;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/originals/96/14/4d/96144d72673933433cccbc66a4877107.jpg);
+  background-size: cover;
+  border-radius: 2%;
+  text-shadow: 1px 0px 10px#00ff11;
+}
+
+.frase > p {
+  font-family: "Odibee Sans", cursive;
+  font-size: 2em;
   color: white;
 }
