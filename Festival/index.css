@@ -6,14 +6,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Keania+One&family=Modak&family=Monoton&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Keania+One&family=Modak&family=Monoton&family=VT323&family=Zilla+Slab+Highlight:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Faster+One&family=Keania+One&family=Modak&family=Monoton&family=VT323&family=Zilla+Slab+Highlight:wght@700&display=swap");
+
+@font-face {
+  font-family: "Segoe-UI";
+  src: url(./font/segoe-ui-4-cufonfonts/Segoe\UI.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
+
 body {
   background-color: black;
 }
+
 header {
   margin-bottom: 10em;
   padding: 100px 0px;
@@ -23,13 +31,11 @@ header {
 }
 
 header::before {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0.15)),
-    to(black)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.15)),
+      to(black));
   content: "";
   position: absolute;
   height: 100%;
@@ -56,32 +62,31 @@ header::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Faster One", cursive;
+  font-family: 'Monoton', cursive;
   flex-wrap: wrap;
 }
 
 .names span:nth-child(1) {
-  color: black;
+  color: white;
   width: 60%;
   height: 10%;
   font-size: 5em;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: ;
+  letter-spacing: 3;
   text-align: center;
   position: relative;
   top: 50;
   left: 50;
   animation: cartel-neon 2s infinite alternate;
 }
+
 .names span:nth-child(2) {
-  color: black;
+  color: white;
   width: 60%;
   height: 10%;
   font-size: 4em;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: ;
+  letter-spacing: 3;
   text-align: center;
   position: relative;
   top: 50;
@@ -90,6 +95,7 @@ header::before {
 }
 
 @keyframes cartel-neon {
+
   0%,
   10%,
   15%,
@@ -105,7 +111,7 @@ header::before {
   85%,
   95%,
   100% {
-    text-shadow: 0px 0px 10px #ff00db, -4px 10px 10px #ff00db,
+    text-shadow: 0px 0px 10px #ee9ce3, -4px 10px 10px #ff00db,
       -4px 10px 10px #ff00db;
   }
 
@@ -116,6 +122,7 @@ header::before {
     text-shadow: none;
   }
 }
+
 
 .menu-container {
   position: fixed;
@@ -164,7 +171,7 @@ header::before {
   z-index: 99;
 }
 
-.navegador ul li > a{
+.navegador ul li>a {
   text-decoration: none;
   margin: 0 30px;
   text-shadow: 1px 0px 10px#00ff11;
@@ -191,20 +198,30 @@ header::before {
 }
 
 .botondecompra {
-  height: 15%;
-  width: 100%;
+  height: 10%;
+  width: 20%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
-  top: 200;
+  top: 370;
+  left: 770;
+  box-shadow: black 2px 2px 2px 2px;
+  text-align: center;
 }
 
-input {
-  background-color: white;
-  height: 50%;
-  width: 10%;
-  border-radius: 20px;
+.botondecompra input {
+  background-color: rgb(226, 82, 195);
+  height: 100%;
+  width: 100%;
+  font-family: 'Monoton', cursive;
+  font-size: 1.4em;
+  color: white;
+  text-shadow: 2px 2px 2px #101110;
+  text-transform: uppercase;
+  border: 2px solid black;
+  letter-spacing: 2;
+
 }
 
 .section1 {
@@ -212,21 +229,25 @@ input {
   width: 100%;
   margin-top: 5em;
 }
-  .container-cards {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  
-  }
-    .card-flex {
+
+.container-cards {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-flex {
   width: 20%;
   height: 70%;
   animation: turquesa-neon 2s infinite alternate;
-    }
+  cursor: pointer;
+ 
+}
 
-  @keyframes turquesa-neon {
+@keyframes turquesa-neon {
+
   0%,
   10%,
   15%,
@@ -242,9 +263,9 @@ input {
   85%,
   95%,
   100% {
-    -webkit-box-shadow: 0px -1px 20px 5px rgb(252,70,107);
-    -moz-box-shadow: 0px -1px 20px 5px rgb(252,70,107);
-    box-shadow: 0px -1px 20px 5px rgb(252,70,107);
+    -webkit-box-shadow: 0px -1px 20px 5px rgb(252, 70, 107);
+    -moz-box-shadow: 0px -1px 20px 5px rgb(252, 70, 107);
+    box-shadow: 0px -1px 20px 5px rgb(252, 70, 107);
   }
 
   10%,
@@ -252,22 +273,23 @@ input {
   40%,
   60% {
     box-shadow: none;
-    }
   }
+}
 
-  .imagen-card {
+.imagen-card {
   width: 100%;
-  height: 60%;;
-  }
+  height: 60%;
+  
+}
 
-  .imagen-card img {
+.imagen-card img {
   width: 100%;
   height: 100%;
   border: solid 3px rgb(212, 46, 76);
   border-bottom: hidden;
-  }
+}
 
-  .frase-card {
+.frase-card {
   width: 100%;
   height: 40%;
   border: solid 3px rgb(212, 46, 76);
@@ -278,124 +300,333 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  .frase-card > h3 {
+.frase-card>h3 {
   text-shadow: 1px 0px 10px#00ff11;
   color: white;
-  }
-
+}
 
 .desplegable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 4%;
-    height: 19%;
-    border-radius: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    z-index:-1;
-    top: 76.65rem;
-    left: 25.6rem;
-    transition: left 0.7s, opacity 2s;
-    visibility: visible;
-    box-sizing: content-box;
-    
-  } 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 4%;
+  height: 19%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: absolute;
+  top: 76.68rem;
+  left: 31rem;
+  transition: all 0.5s ease;
+  box-sizing: content-box;
+  opacity: 0;
+  cursor: pointer;
+}
 
-.desplegable2{
+.desplegable2 {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 4%;
-    height: 19%;
-    border-radius: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    z-index:-1;
-    top: 76.65rem;
-    left: 60.6rem;
-    transition: left 0.7s, opacity 0.2s;
-    visibility: visible;
-    
-    box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 4%;
+  height: 19%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: absolute;
+  top: 76.65rem;
+  left: 70.9rem;
+  transition: all 1s ease;
+  opacity: 0;
+  box-sizing: content-box;
 }
-.desplegable3{
+
+.desplegable3 {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 4%;
-    height: 19%;
-    border-radius: 0 0.5rem 0.5rem 0;
-    position: absolute;
-    z-index:-1;
-    top: 76.65rem;
-    left:100rem;
-    transition: left 0.7s, opacity 0.2s;
-    visibility: visible;
-    
-    box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 4%;
+  height: 19%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: absolute;
+  top: 76.65rem;
+  left: 110.4rem;
+  transition: all 1s ease;
+  box-sizing: content-box;
+  opacity: 0;
 }
- 
- 
-  .icons {
-    background: rgb(252,70,107);
-    background: radial-gradient(circle, rgba(252,70,107,1) 68%, rgba(49,50,57,1) 98%, rgba(44,39,51,1) 100%);
-    border: 3px solid rgb(212, 46, 76);
-    border-radius: 0 0.5rem 0.5rem 0;
+
+.icons {
+  background: rgb(252, 70, 107);
+  background: radial-gradient(circle,
+      rgba(252, 70, 107, 1) 68%,
+      rgba(49, 50, 57, 1) 98%,
+      rgba(44, 39, 51, 1) 100%);
+  border: 3px solid rgb(212, 46, 76);
+  border-radius: 0 0.5rem 0.5rem 0;
   flex-direction: column;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 80%;
   height: 80%;
-  
-  
-  } 
+}
 
-  .icons  a {
-    width: 40%;
+.icons a {
+  width: 40%;
   height: 25%;
-  }
+}
 
-  .icons a img {
+.icons a img {
   width: 100%;
   height: 100%;
-  }
+}
 
-  .container-cards .card-flex:hover .desplegable{
-    
-    visibility: visible;
-    left: 26%;
-  
-  }
-  .container-cards .card-flex:hover .desplegable2{
-    opacity: 1;
-    visibility: visible;
-    left: 59.6%;
-  
-  }
-  .container-cards .card-flex:hover .desplegable3{
-    opacity: 1;
-    visibility: visible;
-    left: 93%;
-  
-  }
-  
-  
+.container-cards .card-flex:hover .desplegable {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container-cards .card-flex:hover .desplegable2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container-cards .card-flex:hover .desplegable3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-flex .desplegable:focus+.icons {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.card-flex .desplegable2:focus+.icons {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.card-flex .desplegable3:focus+.icons {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .section2 {
-  height: 150vh;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: black;
+}
+
+
+.container-tickets {
   width: 100%;
+  height: 80%;
+  background-color: black;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(2, 30%);
-  justify-content: center;
-  align-items: center;
-  row-gap: 2%;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(2, 50%);
+  justify-content: space-around;
+  align-content: center;
+  border: 2px solid black;
+  -webkit-box-shadow: 0px -1px 20px 5px rgb(216, 70, 252);
+    -moz-box-shadow: 0px -1px 20px 5px rgb(216, 70, 252);
+    box-shadow: 0px -1px 20px 5px rgb(216, 70, 252);
+    margin-left: 10%;
+
+}
+
+
+.elemento1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(189,93,247);
+background: linear-gradient(336deg, rgba(189,93,247,1) 18%, rgba(172,72,146,1) 87%);
+  border: 2px solid black;
+  grid-area: 1 / 1 / 3 / 1;
+  flex-wrap: wrap;
   
 }
+
+.mini-div {
+  width: 60%;
+  height: 20%;
+  left: 0%;
+  text-align: center;
+  position: relative;
+  font-size: 2.5rem;
+  
+}
+.mini-div h1{
+  font-size: 5rem;
+}
+
+.mini-div::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 120px;
+  left: 1%;
+}
+
+.precio {
+  width: 40%;
+  height: 20%;
+  text-align: center;
+  font-size: 3.6rem;
+  
+
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: flex-start;
+  width: 85%;
+  height: 50%;
+  position: relative;
+  top: -1%;
+  left: 0;
+
+}
+
+.h2-contenido {
+  font-size: 3em;
+  font-family: "Odibee Sans", cursive;
+  margin-bottom: 1rem;
+}
+
+.contenido ul {
+  list-style: none;
+  font-family: "Odibee Sans", cursive;
+}
+
+.contenido ul li {
+  font-size: 2rem;
+}
+
+.contenido ul li::before {
+  content: '-';
+}
+
+.contenido p {
+  margin-top: 5%;
+  font-size: 1.5rem;
+
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 40%;
+  height: 12%;
+
+}
+
+.counter input {
+  border: 2px solid black;
+  font-size: 2rem;
+  background-color: rgb(248, 248, 248);
+
+}
+
+.counter h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: rgba(223, 109, 238, 0.63);
+
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 12%;
+  border: 2px solid black;
+  background-color: rgba(223, 109, 238, 0.63);
+}
+
+.cart h2 {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.elemento2 {
+  width: 100%;
+  height: 100%;
+  background: rgb(189,93,247);
+background: linear-gradient(336deg, rgba(189,93,247,1) 18%, rgba(172,72,146,1) 87%);
+grid-area: 2 / 2 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background-image: url(https://media.istockphoto.com/photos/modern-futuristic-neon-lights-on-old-grunge-brick-wall-room-3d-picture-id1151380473?k=6&m=1151380473&s=612x612&w=0&h=IvjRKoJ4PWd0t1iJxqugmNnThVQFiqAWRRnjwn8uhYw=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.elemento2 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+
+}
+.elemento2 h1{
+color:white;
+text-align: center;
+text-shadow: 0px 0px 10px #181718, -4px 10px 10px #000000,
+-4px 10px 0px #0f0e0e;
+font-family: "Odibee Sans", cursive;
+}
+
+.elemento3 {
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 2 / 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+ ;
+
+
+}
+
+.elemento3 img{
+  width: 100%;
+  height: 80%;
+  
+  
+}
+.elemento4 {
+  width: 100%;
+  height: 100%;
+  grid-area: 3 / 1 / end / end ;
+  background-color: brown;
+}
+
+
 .element1 {
   height: 100%;
   width: 100%;
@@ -408,6 +639,7 @@ input {
 }
 
 @keyframes pum-pum {
+
   0%,
   10%,
   20%,
@@ -419,6 +651,7 @@ input {
     filter: hue-rotate(70deg);
     box-shadow: 0px -1px 20px 10px yellow;
   }
+
   3%,
   15%,
   35%,
@@ -427,6 +660,7 @@ input {
     filter: hue-rotate(30deg);
     box-shadow: none;
   }
+
   5%,
   28%,
   33%,
@@ -449,6 +683,7 @@ input {
   grid-area: 2 / 1 / 2 / end;
   margin-top: 2rem;
 }
+
 .element2 iframe,
 .video-responsive object,
 .video-responsive embed {
@@ -480,4 +715,60 @@ input {
   width: 100%;
 
   z-index: 5;
+}
+
+footer {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+footer::before {
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(44, 43, 43, 0.13)),
+      to(black));
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+}
+
+.logo-footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-logo {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-logo>h2 {
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+  text-shadow: 1px 0px 10px#00ff11;
+  color: white;
+  font-family: "Odibee Sans", cursive;
+  font-size: 5em;
+}
+
+.div-logo>p {
+  color: white;
+  font-family: "Segoe-UI";
+  text-shadow: 1px 0px 10px#00ff11;
 }
