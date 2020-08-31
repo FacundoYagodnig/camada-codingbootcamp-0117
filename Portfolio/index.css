@@ -4,6 +4,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: #020111;
+  font-family: "Righteous", cursive;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
   background-color: red;
 }
 
-.menu-nav > a {
+.menu-nav>a {
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Righteous", cursive;
@@ -45,11 +46,9 @@ nav img {
 
 .section1 {
   background: rgb(218, 101, 101);
-  background: linear-gradient(
-    300deg,
-    rgb(209, 130, 203) 40%,
-    rgb(25, 24, 26) 20%
-  );
+  background: linear-gradient(300deg,
+      rgb(209, 130, 203) 40%,
+      rgb(25, 24, 26) 20%);
   width: 100%;
   height: 45%;
   font-family: "Righteous", cursive;
@@ -59,21 +58,21 @@ nav img {
   flex-direction: column;
 }
 
-.section1 h1{
+.section1 h1 {
   color: white;
   text-align: center;
   font-size: 4rem;
   margin: 0;
 }
 
-.section1-h2{
+.section1-h2 {
   color: white;
   text-align: center;
   font-size: 3.5rem;
-  margin-block-end: 0; 
+  margin-block-end: 0;
 }
 
-.icons{
+.icons {
   width: 30%;
   height: 20%;
   display: flex;
@@ -81,14 +80,17 @@ nav img {
   align-items: center;
   margin-top: 2%;
 }
-links-redes{
+
+links-redes {
   width: 3rem;
   height: 3rem;
 }
-.icons a > img {
+
+.icons a>img {
   width: 3rem;
   height: 3rem;
 }
+
 .section2 {
   width: 100%;
   height: 50%;
@@ -98,6 +100,7 @@ links-redes{
   align-items: center;
   margin-top: 2%;
 }
+
 .section2 .card::before {
   content: "";
   position: absolute;
@@ -112,29 +115,25 @@ links-redes{
 
 .section2 .card:nth-child(1)::before {
   background: rgb(223, 244, 8);
-  background: linear-gradient(
-    164deg,
-    rgba(204, 255, 0, 1) 44%,
-    rgba(39, 255, 0, 1) 73%
-  );
+  background: linear-gradient(164deg,
+      rgba(204, 255, 0, 1) 44%,
+      rgba(39, 255, 0, 1) 73%);
 }
+
 .section2 .card:nth-child(2)::before {
   background: rgb(250, 0, 0);
-  background: linear-gradient(
-    315deg,
-    rgba(250, 0, 0, 1) 32%,
-    rgba(244, 138, 8, 1) 57%,
-    rgba(0, 255, 244, 1) 100%
-  );
+  background: linear-gradient(315deg,
+      rgba(250, 0, 0, 1) 32%,
+      rgba(244, 138, 8, 1) 57%,
+      rgba(0, 255, 244, 1) 100%);
 }
+
 .section2 .card:nth-child(3)::before {
   background: rgb(34, 143, 250);
-  background: linear-gradient(
-    90deg,
-    rgba(34, 143, 250, 1) 32%,
-    rgba(244, 138, 8, 1) 57%,
-    rgba(255, 252, 0, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(34, 143, 250, 1) 32%,
+      rgba(244, 138, 8, 1) 57%,
+      rgba(255, 252, 0, 1) 100%);
 }
 
 .card {
@@ -146,11 +145,9 @@ links-redes{
   align-items: flex-end;
   border: 1px solid #000;
   background: rgb(2, 0, 46);
-  background: linear-gradient(
-    164deg,
-    rgba(2, 0, 46, 1) 44%,
-    rgba(7, 2, 103, 1) 73%
-  );
+  background: linear-gradient(164deg,
+      rgba(2, 0, 46, 1) 44%,
+      rgba(7, 2, 103, 1) 73%);
 }
 
 .icon-img {
@@ -198,71 +195,56 @@ div:hover .icon-img {
 .section3 {
   width: 100%;
   height: 50%;
-  background-color: red;
-  box-sizing: border-box;
-  border: 4px solid darkmagenta;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+
 }
+
+.section3>h1 {
+  text-align: center;
+  color: white;
+}
+
+.trabajos::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.15)),
+      to(black));
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+ 
+}
+
+
 
 .trabajos {
   width: 66%;
-  height: 90%;
+  height: 80%;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   border: 2px solid white;
+  background-image: url(.//img/Fondo\ gif.gif);
+  background-position: center;
+  background-size: cover;
+  
 }
 
-.trabajos .container-img {
-  width: 80%;
-  height: 95%;
-  background-image: url(https://www.antevenio.com/wp-content/uploads/2017/01/11-blogs-de-marketing-digital-marketing-web.png);
-  background-size: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
 
-.trabajos .container-img img {
-  height: 39%;
-  width: 40%;
-  padding: 10px;
-  background-color: black;
-  border: 4px solid black;
-  box-sizing: border-box;
-}
-
-.trabajos2 {
-  width: 66%;
-  height: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start baseline;
-  background-color: black;
-  border: px solid white;
-}
-
-.trabajos2 .container-img {
-  width: 80%;
-  height: 95%;
-  background-image: url(https://colorlib.com/wp/wp-content/uploads/sites/2/9_bakery-websites-design-800x631.jpg);
-  background-size: 90%;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-.trabajos2 .container-img img {
-  height: 30%;
-  width: 40%;
-  background-color: blue;
-  padding: 10px;
-  border: 4px solid black;
+.trabajos > img {
+  width: 4%;
+  height: 10%;
+  color: white;
 }
 
 .frase-card2 {
@@ -271,16 +253,17 @@ div:hover .icon-img {
   height: 20%;
   justify-content: center;
   align-items: center;
-  background: rgb(48, 42, 51);
-  background: linear-gradient(
-    90deg,
-    rgba(48, 42, 51, 1) 0%,
-    rgba(80, 58, 88, 1) 66%,
-    rgba(28, 26, 28, 1) 100%
-  );
-
-  border: 2px solid white;
   font-family: "Righteous", cursive;
+  position: relative;
+}
+
+
+
+
+.frase-card2>a {
   text-align: center;
   color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: rgb(102, 248, 102) 2px 2px 10px;
 }
